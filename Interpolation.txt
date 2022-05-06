@@ -1,0 +1,2 @@
+<div>{{keyname}}</div>
+// it will print that key value 
