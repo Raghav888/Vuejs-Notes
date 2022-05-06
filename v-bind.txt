@@ -5,3 +5,7 @@ if it's value is false, then button won't be disabled and viceversa
 It can be used with any attribute
 ex: 
 <div :id="idofDiv"></div>
+
+full synatx
+
+<div v-bind:id="idofDiv"></div>
