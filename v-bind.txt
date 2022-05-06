@@ -1,0 +1,7 @@
+<button :disabled="disabled">Click me</button>
+: makes it v-bind that means disabled value will checked from model, and key in model will be disabled
+if it's value is false, then button won't be disabled and viceversa
+
+It can be used with any attribute
+ex: 
+<div :id="idofDiv"></div>
