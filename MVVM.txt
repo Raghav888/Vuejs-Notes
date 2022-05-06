@@ -1,0 +1,7 @@
+Vue js is MVVM architecture-> Model, View, ViewModel
+Model contains initial data
+View is the page that users see
+ViewModel is logic that changes the data and make sure that is updated in view too.
+And it make two way binding. It binds view and model so it is call viewmodel
+
+Model provide data to viewmodel and viewmodel povides it to view.
