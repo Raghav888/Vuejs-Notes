@@ -1,2 +1,7 @@
 1. We can add vuejs by two ways- CDN link and npm install.
+2. If we want our style to applicable to be only to its own component (we want it to be resricted to its own component),
+then we need add "scoped" keyword that will limit the CSS scope to only its component
+ex:
+<style scoped>
+</style>
 
