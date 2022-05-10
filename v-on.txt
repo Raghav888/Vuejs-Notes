@@ -1,7 +1,7 @@
 v-on is like onclick method
 
-<div v-on:click="methodname"></div>
+<div v-on:click="methodname()"></div>
 
 shortcut way is
 
-<div @click="methodname"></div>
+<div @click="methodname()"></div>
