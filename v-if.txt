@@ -1,0 +1,13 @@
+<template>
+ <h1 v-if="show===true">Hello</h1>   It will chcek fisr this condition
+    <h1 v-else-if="show === 'raghav'">Raghav is here</h1> then this condition if above fails
+    <h1 v-else>Hello me</h1> if all condition fails, this will be rendered
+</template>
+
+<script>
+export default{
+  data() {
+    return { show: "raghav" };
+  },
+}
+</script>
