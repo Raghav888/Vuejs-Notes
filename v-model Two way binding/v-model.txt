@@ -1,0 +1,19 @@
+In two way binding, the value is in sync in view and model. It makes the connection between both very easily.
+If in view the value changes, the value is updated in model and vice versa.
+
+Ex:
+
+<template>
+<input type"text" v-model="count"/>
+<h1>{{count}}</h1>
+</template>
+
+<script>
+export default{
+name:"nameofComponent"
+data(){
+return{ count:0}
+}}
+</script>
+
+In above exmplae, when user types in input bx, the count value changes in view as well as in model
