@@ -1,2 +1,6 @@
 See image
 v-bind (:) is also used in sending props to child.
+
+<Child msg="It is streing" :info="item"/>
+
+In above ex msg conatins string where as info contains value of item that is in data function.
