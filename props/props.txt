@@ -1,0 +1,2 @@
+See image
+v-bind (:) is also used in sending props to child.
