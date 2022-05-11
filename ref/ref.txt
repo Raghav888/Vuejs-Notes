@@ -1,0 +1,7 @@
+ref is used to change the DOM elements.
+
+<input type="text" ref="thisisinput"/>
+
+then we will use ref thisisinput to change the properties of the input box in which this ref is mentioned.
+
+See the image
