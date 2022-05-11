@@ -1,0 +1,65 @@
+<script>
+export default {
+  data() {
+  	return {
+	    myObject: {
+  	    title: 'How to do lists in Vue',
+	      author: 'Jane Doe',
+      	publishedAt: '2016-04-10'
+    	}
+  	}
+	}
+}
+</script>
+
+<template>
+	<ul>
+    <li v-for="(value, key, index) in myObject">
+		  {{ index }}. {{ key }}: {{ value }}
+		</li>
+  </ul>
+</template>
+
+//////
+
+<script>
+export default {
+  data() {
+  	return {
+	    myObject: {
+        id:1,
+  	    title: 'How to do lists in Vue',
+	      author: 'Jane Doe',
+      	publishedAt: '2016-04-10'
+    	}
+  	}
+	}
+}
+</script>
+
+<template>
+	<ul>
+    <li v-for="item in myObject :key="item.id">
+		  {{item.title}}
+		</li>
+  </ul>
+</template>
+
+//
+
+<script>
+export default {
+  data() {
+  	return {
+	    parentMessage: 'Parent',
+    	items: ['Foo' , 'Bar' ]
+  	}
+	}
+}
+</script>
+
+<template>
+	<li v-for="item in items">
+{{item}}
+	</li>
+</template>
