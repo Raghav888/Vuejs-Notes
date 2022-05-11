@@ -1,0 +1,7 @@
+<input v-model.trim="data"/>
+
+<input v-model.number="data"/>
+
+<input v-model.lazy="data"/>
+
+<input v-model.trim.lazy="data"/> we can multiple modifiers together
