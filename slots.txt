@@ -1,0 +1,6 @@
+https://vuejs.org/guide/components/slots.html#scoped-slots
+
+
+We have learned that components can accept props, which can be JavaScript values of any type. 
+But how about template content? In some cases, we may want to pass a template fragment to a child component,
+and let the child component render the fragment within its own template.
