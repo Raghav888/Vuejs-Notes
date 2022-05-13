@@ -1,0 +1,11 @@
+It is used to watch any value change and do someting when it value chnages
+It conatins methods which name are same as of the var to watch.
+
+
+watch:{
+count(){
+ some code
+}
+}
+
+https://www.youtube.com/watch?v=2AfulHI5Lyk&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8pqa&index=28
