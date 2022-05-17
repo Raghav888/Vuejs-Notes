@@ -1,0 +1,13 @@
+Lifecycle Phases
+
+1. Create
+2. Mount
+3. Update
+4. Unmount
+
+1. Create is phase in which the whole strcuture of compoennt is created
+2. Mount is phase all properities are added to component (data(),computed,etc are added)
+3. when components is updated is called update phasw
+4. unmount is phase in which the component is removed.
+
+Lifecycle methods are diff from phases
