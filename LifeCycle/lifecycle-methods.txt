@@ -1,0 +1,16 @@
+Create Phase-
+   beforeCreate(){}
+   created(){}
+
+
+Mount Phase-
+   beforeMount(){}
+   mounted(){}
+   
+Update Phase-
+   beforeUpdate(){}
+   updated(){}
+   
+Unmount phase-
+    beforeUnmount(){}
+    unmounted(){}
