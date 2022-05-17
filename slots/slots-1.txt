@@ -1,0 +1,5 @@
+We have learned that components can accept props, which can be JavaScript values of any type.
+But how about template content? In some cases, we may want to pass a template fragment to a child component,
+and let the child component render the fragment within its own template.
+
+https://www.youtube.com/watch?v=Sr7d4hQh7D8&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8pqa&index=29
