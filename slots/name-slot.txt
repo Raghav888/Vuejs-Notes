@@ -1,0 +1,10 @@
+<template v-slot:nameofslot>
+..
+</template>
+
+<slot name="nameofslot"></slot>
+
+
+https://www.youtube.com/watch?v=-8j5Q1NQp2Q&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8pqa&index=30
+
+https://vuejs.org/guide/components/slots.html#named-slots
