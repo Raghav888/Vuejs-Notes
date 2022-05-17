@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=qZPww-JWcik&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8pqa&index=31
 
+https://vuejs.org/guide/essentials/component-basics.html#dynamic-components
+
 when click on something, a specfic component is loaded. We don't use if else in it.
 Ex:
 
