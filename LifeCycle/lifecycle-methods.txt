@@ -1,6 +1,6 @@
 Create Phase-
-   beforeCreate(){}
-   created(){}
+   beforeCreate(){} it is called before the strcuture is created
+   created(){} it is called after the structure is created.
 https://www.youtube.com/watch?v=kNVdjAXIBUE&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8pqa&index=34
 
 Mount Phase-
