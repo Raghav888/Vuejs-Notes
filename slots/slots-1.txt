@@ -3,3 +3,6 @@ But how about template content? In some cases, we may want to pass a template fr
 and let the child component render the fragment within its own template.
 
 https://www.youtube.com/watch?v=Sr7d4hQh7D8&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8pqa&index=29
+
+https://vuejs.org/guide/components/slots.html#scoped-slots
+
