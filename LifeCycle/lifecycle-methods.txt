@@ -55,3 +55,6 @@ All of its associated reactive effects are been stopped
 Use this hook to clean up manually created side effects such as timers, DOM event listeners or server connections.
 
 This hook is not called during server-side rendering
+
+
+Mounted and unmounted is simialr to useEffect in React js as, mounted is used to do somthing after whole rendering is finished and unmounted is use to clear some actions once the component is unounted(in useeffect it is in the return function).So Mount and unmount is sideeffect
