@@ -1,0 +1,7 @@
+1. vue-router lib is used for routing
+ npm -i vue-router@next to install latest version.
+ 
+ <router-view></router-view>
+ 
+ <router-link to="/">cxvc</router-link>
+2. https://www.youtube.com/watch?v=mgnzxhFdCzY&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8pqa&index=38
