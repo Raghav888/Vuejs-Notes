@@ -11,7 +11,8 @@ https://www.youtube.com/watch?v=kNVdjAXIBUE&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8
 Mount Phase-
    beforeMount(){}
    When this hook is called, the component has finished setting up its reactive state, but no DOM nodes have been created yet. It is about to execute its DOM render effect for the first time.
-   
+   The page is not rendered on screeen
+   The template is not binded with script tag
    This hook is not called during server-side rendering.
    
    mounted(){}
