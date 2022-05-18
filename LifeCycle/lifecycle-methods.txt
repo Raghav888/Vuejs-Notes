@@ -1,16 +1,56 @@
+https://vuejs.org/api/options-lifecycle.html#beforecreate
+
 Create Phase-
-   beforeCreate(){} it is called before the strcuture is created
-   created(){} it is called after the structure is created.
+   beforeCreate(){} Called immediately when the instance is initialized, after props resolution, before processing other options such as data() or computed
+   
+   
+   created(){} When this hooks is called, the following have been set up: reactive data, computed properties, methods, and watchers. However, the mounting phase has not been started
+   
 https://www.youtube.com/watch?v=kNVdjAXIBUE&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8pqa&index=34
 
 Mount Phase-
    beforeMount(){}
+   When this hook is called, the component has finished setting up its reactive state, but no DOM nodes have been created yet. It is about to execute its DOM render effect for the first time.
+   
+   This hook is not called during server-side rendering.
+   
    mounted(){}
    
+   Used for side effect taht is, it is called once the dom is ready, the complete rendering is finished.
+   
+   All of its synchronous child components have been mounted (does not include async components or components inside <Suspense> trees).
+
+Its own DOM tree has been created and inserted into the parent container. Note it only guarantees that the component's DOM tree is in-document if the application's root container is also in-document.
+
+This hook is typically used for performing side effects that need access to the component's rendered DOM, or for limiting DOM-related code to the client in a server-rendered application.
+
+This hook is not called during server-side rendering.
+   
 Update Phase-
-   beforeUpdate(){}
+   beforeUpdate(){} Called after the component has updated its DOM tree due to a reactive state change.
+   Not called during server side rendering
+   
    updated(){}
+   A parent component's updated hook is called after that of its child components.
+
+This hook is called after any DOM update of the component, which can be caused by different state changes.
+This hook is not called during server-side rendering
+
+Do not mutate component state in the updated hook - this will likely lead to an infinite update loop!
    
 Unmount phase-
     beforeUnmount(){}
+    Called right before a component instance is to be unmounted.
+    When this hook is called, the component instance is still fully functional.
+
+This hook is not called during server-side rendering.
     unmounted(){}
+    Called after the component has been unmounted.
+    A component is considered unmounted after:
+
+All of its child components have been unmounted.
+All of its associated reactive effects are been stopped
+
+Use this hook to clean up manually created side effects such as timers, DOM event listeners or server connections.
+
+This hook is not called during server-side rendering
