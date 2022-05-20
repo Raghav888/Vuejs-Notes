@@ -1,0 +1,13 @@
+When we want to send some data in routes, and that data can be dynamic we called it dyamic routing.
+Ex: sending product id can be called as dynamic routing.
+
+Path is
+/home/:name
+
+here name is paramter that is dynamic.
+
+import {useRoute} from bue-router;
+
+const param=useRoute.params
+
+https://www.youtube.com/watch?v=avjZ9UmhnCY&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8pqa&index=39
