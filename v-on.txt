@@ -5,3 +5,8 @@ v-on is like onclick method
 shortcut way is
 
 <div @click="methodname()"></div>
+
+We can call multiple methods on click
+
+<div @click="methodname(),method2(),.."></div>
+
