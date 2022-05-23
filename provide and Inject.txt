@@ -1,1 +1,35 @@
-Provide/u 2
+Provide/inject
+
+The two api provide a way to pass data through component tree, without having to pass props. So with help of this we will avoid propn drilling.
+
+Data is provided in parent and injected in child
+
+Parent component
+
+export default{
+name:"parent"
+data(){
+return {
+name:"Raghav"
+}
+},
+provide(){
+return{
+ username:this.name
+}
+}
+}
+
+Child
+
+<template>
+<h2>{{username}}</h2>
+</template>
+
+export default{
+
+name:"child"
+inject:['username']
+}
+
+In this way we can avoid prop drilling
