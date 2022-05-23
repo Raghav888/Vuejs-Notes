@@ -9,3 +9,20 @@ ex:
 full synatx
 
 <div v-bind:id="idofDiv"></div>
+
+Also we can use in this way bu ternery operator, and , or
+
+
+
+<div :class="soldout? 'green':'red'">helo</div> // in this ex, soldout (boolean) is data property and green/red is classname, whose style is written
+
+<div :class="promoted && 'green' "></div> // in this ex, promted (boolean) i data property and geen is class name
+
+
+Applying multiple class on based on some condition
+Array Approach:
+
+<h2 :class="[isPromoted && 'new',soldout? 'green':'red']" // ispromoted and soldout is boolean data property.
+
+Object Approach
+<h2 :class="{new:isPromoted,red:soldout, green:!soldout}" // ispromoted and soldout is boolean data property. If they are true those classes  are applied.
