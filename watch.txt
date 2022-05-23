@@ -6,6 +6,21 @@ watch:{
 count(){
  some code
 }
+
+movie:{      consider movie has some initial value, so on 1st render we want its value to watch, we use handler+ immediate
+handler(newvalue){
+
+console.log(newvalue)
+},
+immediate:true
+}
+
+movieInfo:{  conider movieInfo is array/object, we want to watch it then we need to use handler+deep
+handler(newValue){
+console.log(newValue)
+},
+deep:true
+}
 }
 
 https://www.youtube.com/watch?v=2AfulHI5Lyk&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8pqa&index=28
