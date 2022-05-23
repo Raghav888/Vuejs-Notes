@@ -1,0 +1,16 @@
+v-once
+ Renders the corresponding HTML elemnt only once. On subsequet render, 
+ the elemts is treated as static and skipped. Used for optimization as re-render for that elemnt doesnot happen.
+ 
+ ex:
+ <div v-once>{{name}}</div> it will render the name value only once
+ <div v-once>Raghav</div>
+ 
+ 
+ v-pre: It skips compilation for the correspnding element
+ 
+ ex:
+ 
+ <div v-pre>{{name}}</div>
+ 
+ it will print this on screen {{name}}
