@@ -1,1 +1,12 @@
+id ,class are non prop attriubte. If we apply id or class on child component in parent component , the id/class get applied to child component's outest div.
+If there is not outest div, then it id/class wont be applied.
+
+If we want to apply id/class to specfic tag in child compoennet,
+we need to add this in that tag
+v-bind="$attrs"
+and also at same time we dont to apply it to outest div
+so we need to add  this in script of child component
+
+inheritAttrs:false
+
 https://www.youtube.com/watch?v=-RuYSF_c_ps&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8pqa&index=26
