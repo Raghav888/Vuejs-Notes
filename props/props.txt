@@ -4,3 +4,15 @@ v-bind (:) is also used in sending props to child.
 <Child msg="It is streing" :info="item"/>
 
 In above ex msg conatins string where as info contains value of item that is in data function.
+
+If in child component we need to makw a prop required then we can do it as well as we can give is default value
+
+ex;
+In child component
+props:{
+titile:{
+type:String,
+required:true,
+default:"It is default title"
+}
+}
