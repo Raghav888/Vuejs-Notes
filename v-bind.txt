@@ -30,3 +30,35 @@ Object Approach
 
 if the class name is not single word we need to write it in single quote in object
 ex: :class="{'sold-out':soldout}"
+
+
+We can bind style too
+
+Using object
+<h2 :style="{ color:'red', fontStyle:'23px'}">hello</h2>
+OR
+
+data(){
+return{
+styleofHead:{ color:'red', fontStyle:'23px'}
+}
+}
+
+<h2 :style="styleofHead">Hello</h2>
+
+
+Using array
+
+data(){
+return{
+styleofHead:{ color:'red', fontStyle:'23px'},
+styleofSucces:{
+color:'Green'
+}
+}
+}
+
+<h2 :style="[styleofHead,styleofSucces]">hello</h2> here the last class will overide the css properties of earleier class
+
+
+
