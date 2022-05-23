@@ -26,3 +26,7 @@ Array Approach:
 
 Object Approach
 <h2 :class="{new:isPromoted,red:soldout, green:!soldout}" // ispromoted and soldout is boolean data property. If they are true those classes  are applied.
+
+
+if the class name is not single word we need to write it in single quote in object
+ex: :class="{'sold-out':soldout}"
