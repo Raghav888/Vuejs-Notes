@@ -1,0 +1,12 @@
+It is used when we are using same logic in different components. It conatins our whole js code like data,methods, lifecycle methods, compute,etc.
+
+Mixins is used for reusebality of code as logic is same.
+
+
+In component where we need tp use those logic ,
+in script we add
+mixins:[nameofmixin function]
+
+If mixin code  and component code has same name of var, method then componennt var, function is given priority.
+
+https://www.youtube.com/watch?v=LyG_l5UoeHI&list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f&index=50
