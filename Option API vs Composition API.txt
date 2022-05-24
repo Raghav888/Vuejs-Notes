@@ -1,5 +1,6 @@
 Options API#
-With Options API, we define a component's logic using an object of options such as data, methods, and mounted. Properties defined by options are exposed on this inside functions, which points to the component instance:
+With Options API, we define a component's logic using an object of options such as data, methods, and mounted.
+Properties defined by options are exposed on this inside functions, which points to the component instance:
 
 <script>
 export default {
@@ -31,10 +32,15 @@ export default {
 <template>
   <button @click="increment">Count is: {{ count }}</button>
 </template>
-Try it in the Playground
 
-Composition API#
+Composition API are introduced because, all the code grows, project become hard to manage in Option API. It become hard to read through large files as logic is
+not grouped by feature. Theyare  grouped by methods, data, compute,etc in option  API.
+Another reason is reuse of logic becomes difficult in Option API.
+
+Composition API allows to encapsulate funtionaliy, so that we can use it diff components.
+Composition API# Introduced in Vue3
 With Composition API, we define a component's logic using imported API functions. In SFCs, Composition API is typically used with <script setup>. The setup attribute is a hint that makes Vue perform compile-time transforms that allow us to use Composition API with less boilerplate. For example, imports and top-level variables / functions declared in <script setup> are directly usable in the template.
+Note that setup runs before all lifecycle methods.
 
 Here is the same component, with the exact same template, but using Composition API and <script setup> instead:
 
