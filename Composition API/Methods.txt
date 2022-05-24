@@ -1,0 +1,23 @@
+creating a function in setup() and returning it will make the function work.
+Ex:
+
+<template>
+<h2>{{count}}</h2>
+<button @click="increment">Increment</button>
+</template>
+
+<script>
+export default{
+name:"default"
+setup(){
+const count=ref(0);
+function increment(){
+count.value++
+}
+
+return{
+count,increment
+}
+}
+}
+</script>
