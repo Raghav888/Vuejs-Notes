@@ -4,19 +4,29 @@ Ex:
 <template>
 <h2>{{count}}</h2>
 <button @click="increment">Increment</button>
+
+<h2>{{name}}</h2>
+<button @click="changeName">Change name</button>
 </template>
 
 <script>
+import {ref,reactive,toRefs} from "vue";
 export default{
 name:"default"
 setup(){
 const count=ref(0);
+
+
 function increment(){
 count.value++
 }
+const state=reactive({name:"Raghav"})
 
+function changeName(){
+state.name="Ram"
+}
 return{
-count,increment
+count,increment, ...toRefs(state)
 }
 }
 }
