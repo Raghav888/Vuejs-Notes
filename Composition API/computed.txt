@@ -1,0 +1,15 @@
+In composition API,
+
+computed is function, it takes a function as input.
+
+ex:
+
+<template>
+<h2>{{refFullname}}</h2> // it will print this is Raghav
+</template>
+import {computed,ref} from"vue"
+
+const name=ref("Raghav")
+const refFullname=computed(()=> `this is ${name.value}`)
+
+return{ refFullname}
