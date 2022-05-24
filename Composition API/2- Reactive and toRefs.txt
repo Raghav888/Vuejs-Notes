@@ -1,4 +1,4 @@
-reactive is used with array/object, basically with nonprimtive datatypes.
+reactive is used with object only. We can use nonprimtive datatypes in that object.
 ex:
 
 <template>
@@ -10,4 +10,6 @@ const state=reactive({ firstname:"Raghav",lastName:"Bang"})
 setTimeout(()=>{state.firstname="Ram"},2000)
 return toRefs(state) // toRefs is used so that it destrcutures the state and we can directly access the firstname and lastname.
 // if we try to return {firstname,lastname} it will not give us the reactivity due to which if its value changes, it is not rer-rendered.
+// if we return {state}, then in template we need to use {{state.firstname}} in this way.
+// Note in option api, data uses reactive function
 }
