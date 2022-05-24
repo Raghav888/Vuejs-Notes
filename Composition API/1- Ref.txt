@@ -5,6 +5,26 @@ setup() is entery point in composition api.
 It run before all lifecycle method.
 We can use option api with composition api.
 ref() is used only for primitive  data type.
+
+It can be used tp create object also , but here comes dis advantage of it.
+1. we need to value always
+ex:
+
+const data=ref({name:"Raghav", age:"22"})
+
+data.value.name="Ram"
+
+2. We can change whole data of it.
+
+ex: data.value={name:"ravi",age:"77"}
+
+Whereas in reactive we cannot change whole data.
+We can change it by
+
+data.name="Ravi"
+data.age="25"
+
+So it is suggested to use ref with only primitive data type.
 ref() is reactive refrenece.
 
 
