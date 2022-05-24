@@ -1,0 +1,67 @@
+data in option api is replace with Ref in composition api.
+ref() is different from template ref attribute.
+template ref gives us access to dom elenmt or child element.
+setup() is entery point in composition api.
+It run before all lifecycle method.
+We can use option api with composition api.
+
+ref() is reactive refrenece.
+
+
+<template>
+{{firstname}}
+</template>
+<script>
+import {ref} from "vue";
+
+export defualt{
+name:"name",
+setup(){
+const firstname=ref("Raghav") // Raghav is initial value to it.
+
+// Now we need to extract those value to be bale to use in template
+// so we return it
+
+return{
+firstname  
+}
+}
+
+}
+
+
+Note:
+
+
+In setup(), the firstname is obj, in which "value" is key, that has the the value - Raghav.
+The return function in setup, unpacks firstname and give the value.
+
+
+
+<template>
+{{firstname}}
+</template>
+<script>
+import {ref} from "vue";
+
+export defualt{
+name:"name",
+setup(){
+const firstname=ref("Raghav") // Raghav is initial value to it.
+console.log(firstname) // it prints an object, that has many key value pair, in which one key is "value", and its value is Raghav.
+
+console.log(firstname.value) // print Raghav
+firstname.value="Bang" // Raghav will be replaced by Bang
+// Now we need to extract those value to be bale to use in template
+// so we return it
+
+return{
+firstname   // here it returns only firstname.value, as it unpacks the value. So in template we can directly use firstname as from here only string is returned.
+}
+}
+
+}
+
+
+ref is used because, when the value of ref changes, it re renders the part where ref var is used. So basically it is like hook. That re render the required part on screen.
+
