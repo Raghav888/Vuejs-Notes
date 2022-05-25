@@ -1,0 +1,16 @@
+In parent component
+
+setup(){
+provide('var name', value)   // we can send ref/ reactive value directly by just writing varname.
+}
+
+in child component
+
+setup(){
+const newData=inject('var name', 'default value') // default value isused if parent doesnot send data.
+return{
+newData
+}
+}
+
+In similar way we can send the function also.
