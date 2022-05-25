@@ -1,0 +1,14 @@
+In parent component props are send
+
+<Child :name:"name"/>
+
+In child component
+ 
+props:{ // this is important, then only we can access it.
+name:String
+}
+setup(props){
+console.log(props.name)
+}
+
+Setup function takes two arguemnts -props and context.
