@@ -1,0 +1,47 @@
+import {watch, ref} from "vue";
+
+setup(){
+const name=ref("");
+
+// watch takes two parameter, 1st is var name, second is a function that has two para-> newValue and oldValue.
+
+watch(name,(newValue,oldValue)=>{
+ here we write the methods.
+})
+
+}
+
+// watchers can watch multiple sources two
+
+it takes array of those var. Ex-
+
+
+import {watch, ref} from "vue";
+
+setup(){
+const name=ref("raghav");
+const lastname=ref("bang")
+
+// watch can take array of var also as input and then newvalue, oldvalue is also an array.
+
+watch([name,lastname],(newValue,oldValue)=>{
+
+console.log(newValue[0])// print newvalue of name
+console.log(oldValue[0]) // print old value of name
+console.log(newValue[1])  // print new value of lastname
+console.log(oldValue[1]) // print oldvalue of lastname
+ 
+})
+
+}
+
+
+// if we want to watch initial values of var, we need to use immediate watchers.
+
+for that watch takes 3rd arguemnt.
+
+watch(varname,()=>{},{
+immediate:true
+})
+
+// simialry for deep.
