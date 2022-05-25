@@ -1,1 +1,22 @@
+const state=reactive({fname:"Rgahav",lname:"bang"})
 
+watch(()=>{return {...state}},(newValue,oldValue)=>{ // here we need to retrurn {...state} then only we can get old value and newvalue
+
+console.log(oldValue.fname)
+console.log(oldValue.lname)
+console.log(newValue.fname)
+console.log(newValue.lname)
+})
+
+If we want to watch only single key in reactive then
+watch(()=>state.fname,(newValue,oldValue)=>{
+console.log(newValue);
+console.log(oldValue)
+})
+
+If we have nested object then we need to use deep.
+const state=reactive({fname:"Rgahav",lname:"bang",option:{name:"raghav"}})
+
+watch(()=>state.option,(newValue,oldValue)=>{ console.log(newValue,oldvalue)}, 
+{deep:true}
+)
