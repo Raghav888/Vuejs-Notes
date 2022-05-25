@@ -1,0 +1,57 @@
+Mixins is replaced by composables in composition api.
+
+Composables folder contains the files, that will have the logic code.
+The naming convention of file is "useFunctionality".
+
+ex:
+
+import {ref} from "vue";
+
+export default function useCounter(){
+
+const count=ref(0)
+
+const increaseValue=()=>{
+count.value++
+}
+
+return{ count,increaseValue }
+}
+
+Now in compoent we can import this and in setup method we will call the useCounter function and destructure it.
+
+setup(){
+
+const {count, increaseValue}=useCounter();
+return{count,increaseValue}
+}
+
+now in template we can use those.
+
+It solves the problem with mixins, that now we know the var names that composable has.
+
+
+Also we can send parameter in useCounter function in this way-
+
+
+import {ref} from "vue";
+
+export default function useCounter(intialvalue=0,steps=1){ // if param are not pased it will use default value
+
+const count=ref(intialvalue)
+
+const increaseValue=()=>{
+count.value+=steps
+}
+
+return{ count,increaseValue }
+}
+
+Nd in component code
+
+
+setup(){
+
+const {count, increaseValue}=useCounter(100,10);
+return{count,increaseValue}
+}
