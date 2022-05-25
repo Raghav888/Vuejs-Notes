@@ -11,3 +11,5 @@ unmounted by OnUnmounted
 
 
 Those composition lifecycle hooks are used in setup()
+Those hooks take a function in it as parameter
+ex: onMounted(()=>{})
