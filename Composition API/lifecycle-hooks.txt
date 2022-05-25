@@ -8,3 +8,6 @@ updated by onUpdated
 
 beforeUnmount by onBeforeUnmounted
 unmounted by OnUnmounted
+
+
+Those composition lifecycle hooks are used in setup()
