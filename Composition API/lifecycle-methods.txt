@@ -1,0 +1,10 @@
+beforeCreate and created is replaced by setup in Composition API
+
+beforeMount by onBeforeMount
+mounted byonMounted
+
+beforeUpdate by onBeforeUpdate
+updated by onUpdated
+
+beforeUnmount by onBeforeUnmounted
+unmounted by OnUnmounted
